@@ -33,8 +33,6 @@ body {
 
 section {
     min-height: 100vh;
-    display: flex;
-    justify-content: left;
     padding: 60px;
 }
 
@@ -62,6 +60,77 @@ section {
 
 .barrier {
     background: white;
-    height: 2px;
-    margin: 20px 0;
+    height: 3px;
+    margin: 2rem 0;
+    border-radius: 2px;
 }
+
+#signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: wrap;
+}
+
+.student-info, .student-name {
+    font-weight: 400;
+}
+
+#about h2, #projects h2, #skills h2, #contact h2 {
+    font-size: 3rem;
+    font-weight: 450;
+    margin-bottom: 1rem;
+}
+
+#about .container {
+    height: 100%;
+}
+
+.about-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    height: 70%;
+}
+
+.about-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+}
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-card {
+    background: seashell;
+    border: 1px solid rgb(47, 47, 47);
+    text-align: left;
+    color: black;
+}
+
+.about-1, .about-3 {
+    border-radius: 70px 70px 70px 20px;
+}
+
+.about-2 {
+    border-radius: 70px 70px 20px 70px;
+}
+
+.about-card h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+}
+
+.about-card p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5px 0 5px 0;
+}
+
