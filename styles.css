@@ -1,3 +1,5 @@
+/* Global styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,6 +17,17 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
+#home, #skills, #contact {
+    background: linear-gradient(135deg, rgb(84,134,184) 0%, rgb(213,225,237) 33%, rgb(178,209,244) 66%, rgb(190,188,188) 100%);
+}
+
+#about, #projects {
+    background: linear-gradient(135deg, rgb(215,113,58) 0%, rgb(222,197,178) 33%, rgb(211,151,123) 66%, rgb(180,159,145) 100%);
+}
+
+
+/* Navigation bar */ 
 
 #navbar {
     position: fixed;
@@ -36,13 +49,9 @@ section {
     padding: 60px;
 }
 
-#home, #skills, #contact {
-    background: linear-gradient(135deg, rgb(84,134,184) 0%, rgb(213,225,237) 33%, rgb(178,209,244) 66%, rgb(190,188,188) 100%);
-}
 
-#about, #projects {
-    background: linear-gradient(135deg, rgb(215,113,58) 0%, rgb(222,197,178) 33%, rgb(211,151,123) 66%, rgb(180,159,145) 100%);
-}
+
+/* Welcome layout */
 
 #welcome h1 {
     font-size: 3rem;
@@ -75,14 +84,21 @@ section {
     font-weight: 400;
 }
 
+
+/* Titles for each section */
+
 #about h2, #projects h2, #skills h2, #contact h2 {
     font-size: 3rem;
     font-weight: 450;
     margin-bottom: 1rem;
 }
 
+
+/* About layout */
+
 #about .container {
     height: 100%;
+    text-align: left;
 }
 
 .about-columns {
@@ -112,6 +128,24 @@ section {
     border: 1px solid rgb(47, 47, 47);
     text-align: left;
     color: black;
+    min-height: 200px;
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}
+
+.about-card:hover::before {
+    left: 100%;
+}
+
+.about-card:hover {
+    background: seashell;
 }
 
 .about-1, .about-3 {
@@ -134,3 +168,38 @@ section {
     margin: 5px 0 5px 0;
 }
 
+
+/* Skills layout */
+
+#skills  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#skills h2 {
+    font-size: 3rem;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.skills-card {
+    background: linear-gradient(180deg, rgb(68, 110, 51) 0%, rgb(147, 187, 114) 100%);
+    border-radius: 20px;
+    position: relative;
+}
+
+.skills-card h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+.skills-card h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+}
