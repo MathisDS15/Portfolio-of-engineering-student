@@ -12,10 +12,18 @@ body {
     background: black;
 }
 
+section {
+    min-height: 100vh;
+    padding: 80px 0 40px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
 .container {
-    max-width: 1200px;
+    width: 90vw;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 #home, #skills, #contact {
@@ -27,16 +35,33 @@ body {
 }
 
 
+/* Titles for each section */
+
+#about h2, #projects h2, #skills h2, #contact h2 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 450;
+    margin-bottom: 1rem; 
+    text-align: left;
+}
+
+
 /* Navigation bar */ 
 
 #navbar {
+    display: flex;
     position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
+    top: 30px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    max-width: 1100px;
+    padding: 0.5rem 0;
+    border-radius: 40px;
     justify-content: center;
     text-align: center;
     background: linear-gradient(135deg, #D9D9D9 0%, #777777 33%, #D9D9D9 66%, #777777 100%);
+    z-index: 100;
 }
 
 .navbar-link {
@@ -44,112 +69,89 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-weight: 400;
+    transition: color 0.7s;
 }
 
-section {
-    min-height: 100vh;
-    padding: 40px;
+.navbar-link:hover {
+    color: black;
 }
 
 
+/* Home layout */
 
-/* Welcome layout */
-
-#home {
+#home .container {
+    display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    text-align: left;
+    height: 80vh;
 }
 
 #welcome h1 {
     font-size: 3rem;
     font-weight: 500;
-    text-align: left;
     margin-bottom: 1px;
 }
 
 #welcome p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
-    text-align: left;
     margin-bottom: 5px;
 }
 
 .barrier {
     background: white;
     height: 3px;
-    margin: 2rem 0;
+    margin: 10px 0;
     border-radius: 2px;
 }
 
 #signature {
     display: flex;
     justify-content: space-between;
-    align-items: wrap;
+    align-items: center;
 }
 
-.student-info, .student-name {
+.student-info p, .student-name p {
     font-weight: 400;
-}
-
-
-/* Titles for each section */
-
-#about h2, #projects h2, #skills h2, #contact h2 {
-    font-size: 3rem;
-    font-weight: 450;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 
 /* About layout */
 
 #about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
-    text-align: left;
 }
 
 .about-columns {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    align-items: center;
-    height: 70%;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    width: 100%;
 }
 
 .about-left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .about-right {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
 }
 
 .about-card {
     background: seashell;
-    border: 1px solid rgb(47, 47, 47);
     text-align: left;
     color: black;
-    min-height: 200px;
-}
-
-.about-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-}
-
-.about-card:hover::before {
-    left: 100%;
+    min-height: 180px;
+    padding: 2.5rem 2rem;
+    position: relative;
 }
 
 .about-card:hover {
