@@ -35,23 +35,31 @@ body {
     width: 100%;
     padding: 1rem;
     justify-content: center;
+    text-align: center;
     background: linear-gradient(135deg, #D9D9D9 0%, #777777 33%, #D9D9D9 66%, #777777 100%);
 }
 
 .navbar-link {
     color: white;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: 400;
 }
 
 section {
     min-height: 100vh;
-    padding: 60px;
+    padding: 40px;
 }
 
 
 
 /* Welcome layout */
+
+#home {
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: left;
+}
 
 #welcome h1 {
     font-size: 3rem;
@@ -202,4 +210,67 @@ section {
     font-weight: 400;
     text-align: center;
     padding: 15px;
+}
+
+
+/* Projects layout */
+
+#projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-row: span 3;
+    gap: 20px;
+}
+
+.project-card {
+    background: linear-gradient(180deg, rgba(72, 17, 90, 0.70) 0%, rgba(132, 73, 148, 0.70) 100%);
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    text-align: left;
+    min-height: 300px;
+}
+
+
+/* Contact layout */
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(49, 84, 119,0.6) 0%, rgb(153, 178, 202,0.6) 33%, rgb(80, 131, 189,0.6) 66%, rgb(147, 165, 216,0.6) 100%);
+    backdrop-filter: blur(15px);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 470;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(135deg, rgb(49, 84, 119) 0%, rgb(153, 178, 202) 33%, rgb(80, 131, 189) 66%, rgb(147, 165, 216) 100%);
+    border-radius: 40px;
 }
