@@ -184,7 +184,7 @@ section {
 #skills  .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 40px;
 }
 
 #skills h2 {
@@ -195,8 +195,12 @@ section {
 
 .skills-card {
     background: linear-gradient(180deg, rgb(68, 110, 51) 0%, rgb(147, 187, 114) 100%);
-    border-radius: 20px;
-    position: relative;
+    border-radius: 40px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 2rem;
 }
 
 .skills-card h3 {
@@ -211,31 +215,36 @@ section {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    padding: 15px;
+    padding: 0.7rem 2rem;
+    margin: 1.2rem 0;
+    text-align: center;
 }
 
 
 /* Projects layout */
 
 #projects .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-grid {
     display: grid;
-    grid-row: span 3;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+    gap: 32px;
 }
 
 .project-card {
-    background: linear-gradient(180deg, rgba(72, 17, 90, 0.70) 0%, rgba(132, 73, 148, 0.70) 100%);
-    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(109, 68, 122, 0.7) 0%, rgba(203, 145, 219, 0.7) 100%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
     position: relative;
     color: white;
-    text-align: left;
-    min-height: 300px;
+    align-items: flex-start;
+    min-height: 350px;
+    min-width: 200px;
 }
 
 
