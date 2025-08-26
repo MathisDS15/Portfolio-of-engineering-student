@@ -256,6 +256,13 @@ section::before {
     margin-bottom: 5px;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
 .skills-card {
     border-radius: 30px;
     min-height: 400px;
@@ -380,7 +387,11 @@ section::before {
     background: linear-gradient(145deg, #ffecd2 0%, #fcb69f 100%);
 }
 
-.project-image {
+.project-4 {
+    background: linear-gradient(145deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.project-card img {
     width: 120px;
     height: 120px;
     border-radius: 20px;
@@ -431,3 +442,7 @@ section::before {
     color: white;
     letter-spacing: 1px;
 }
+
+
+/* Footer*/
+
