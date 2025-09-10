@@ -374,22 +374,45 @@ section::before {
 .col-3 { background: var(--grad-skill-3); }
 
 .skills-image-pl {
-    width: 60px;
-    height: 60px;
-    margin: 10px;
+  width: 60px;
+  height: 60px;    
+  margin: 10px;
+  object-fit: cover;
+}
+
+.skills-image-mysql {
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  object-fit: cover;
 }
 
 .skills-image-f {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .skills-image-st {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.skills-image-figma {
+  width: 45px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.row-1, .row-2, .row-3 {
+  align-content: center;
 }
 
 .skills-card h3 {
