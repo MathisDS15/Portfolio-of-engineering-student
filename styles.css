@@ -328,7 +328,7 @@ section::before {
 .skills-grid {
   display: grid;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
@@ -338,8 +338,8 @@ section::before {
   flex-direction: column;
   align-items: center;
   min-height: 350px;
-  padding: 2rem;
-  border-radius: 25px;
+  padding: 1rem;
+  border-radius: 30px;
   color: white;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -373,10 +373,23 @@ section::before {
 .col-2 { background: var(--grad-skill-2); }
 .col-3 { background: var(--grad-skill-3); }
 
-.skills-image {
+.skills-image-pl {
     width: 60px;
     height: 60px;
     margin: 10px;
+}
+
+.skills-image-f {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.skills-image-st {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 .skills-card h3 {
@@ -384,14 +397,14 @@ section::before {
   font-weight: 500;
   margin-bottom: 5px;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
 }
 
 .skills-card h5 {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  padding: 0.7rem 2rem;
+  padding: 0.2rem 2rem;
   margin: 1.2rem 0;
 }
 
