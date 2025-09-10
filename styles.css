@@ -373,8 +373,14 @@ section::before {
 .col-2 { background: var(--grad-skill-2); }
 .col-3 { background: var(--grad-skill-3); }
 
+.skills-image {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
 .skills-card h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1.3rem, 1.6vw, 1.6rem);
   font-weight: 500;
   margin-bottom: 5px;
   text-align: center;
@@ -418,6 +424,7 @@ section::before {
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   background: var(--grad-project);
+  align-items: center;
 }
 
 .project-card::after {
@@ -435,14 +442,13 @@ section::before {
 }
 
 .project-image {
-  width: 84px;
-  height: 84px;
+  width: 100px;
+  height: 100px;
   border-radius: 16px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.3rem;
   display: grid;
   place-items: center;
   font-weight: 600;
-  background: linear-gradient(145deg, #1a1a2e, #16213e);
   color: #fff;
 }
 
@@ -454,16 +460,17 @@ section::before {
 }
 
 .project-info h3 {
-  font-size: 1.25rem;
+  font-size: clamp(0.8rem, 1.6vw, 1.6rem);
   font-weight: 600;
   color: #333;
 }
 
 .project-info p {
-  font-size: .95rem;
+  font-size: clamp(1rem, 1vw, 1.05rem);
   line-height: 1.6;
   color: #666;
   flex: 1;
+  text-align: justify;
 }
 
 .project-info a {
