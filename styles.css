@@ -108,7 +108,7 @@ section::before {
   color: var(--color-text);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 450;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: left;
   position: relative;
 }
@@ -310,6 +310,7 @@ section::before {
   font-size: clamp(1rem, 1vw, 1.05rem);
   font-weight: 400;
   margin: 5px 10px;
+  text-align: justify;
 }
 
 
@@ -333,6 +334,7 @@ section::before {
 }
 
 .skills-card {
+  justify-content: flex-start;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -377,14 +379,14 @@ section::before {
   width: 60px;
   height: 60px;    
   margin: 10px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skills-image-mysql {
   width: 100px;
   height: 60px;
   margin: 10px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skills-image-f {
@@ -392,7 +394,7 @@ section::before {
   height: 90px;
   margin: 10px;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skills-image-st {
@@ -400,7 +402,7 @@ section::before {
   height: 60px;
   margin: 10px;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skills-image-figma {
@@ -408,11 +410,11 @@ section::before {
   height: 60px;
   margin: 10px;
   border-radius: 2px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .row-1, .row-2, .row-3 {
-  align-content: center;
+  justify-content: center;
 }
 
 .skills-card h3 {
