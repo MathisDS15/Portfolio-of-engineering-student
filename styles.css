@@ -573,8 +573,16 @@ section::before {
   border: none;
   border-radius: 50px;
   color: var(--color-text);
-  background: var(--grad-cta);
+  background: var(--grad-contact);
   overflow: hidden;
+  transition: 1s;
+}
+
+#contact button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: 1s;
 }
 
 
