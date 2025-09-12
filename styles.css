@@ -522,13 +522,25 @@ section::before {
   transform: translateY(-1px);
 }
 
-/* If you still want separate modifiers, keep them light */
 .project-1, .project-2, .project-3, .project-4 { background: var(--grad-project); }
 
 
 /* ---------- Contact ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
 #contact form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 2rem;
   border-radius: var(--radius-sm);
@@ -547,6 +559,7 @@ section::before {
 #contact input,
 #contact textarea {
   width: 100%;
+  height: 40px;
   padding: 10px;
   margin-bottom: 15px;
   font-size: 1rem;
@@ -558,7 +571,8 @@ section::before {
 
 #contact button {
   width: 100%;
-  padding: 1.2rem;
+  height: 40px;
+  margin: 2px;
   font-size: 1.2rem;
   font-weight: 450;
   letter-spacing: 1px;
