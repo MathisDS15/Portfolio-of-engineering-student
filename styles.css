@@ -12,10 +12,10 @@
   --font-family: "Sora", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
   /* Colors */
-  --color-text: #ffffff;
-  --color-bg: #000000;
+  --color-text: white;
+  --color-bg: black;
 
-  /* Radii & Shadows */
+  /* Radius & Shadows */
   --radius-xs: 5px;
   --radius-sm: 20px;
   --radius-md: 30px;
@@ -40,10 +40,10 @@
     rgb(211, 151, 123) 66%,
     rgb(180, 159, 145) 100%
   );
-  --grad-nav: linear-gradient(135deg, #d9d9d9 0%, #777 33%, #d9d9d9 66%, #777 100%);
-  --grad-skill-1: linear-gradient(145deg, rgb(102,126,234) 0%, rgb(118,75,162) 100%);
-  --grad-skill-2: linear-gradient(145deg, rgb(240,147,251) 0%, rgb(245,87,108) 100%);
-  --grad-skill-3: linear-gradient(145deg, rgb(79,172,254) 0%, rgb(0,242,254) 100%);
+  --grad-nav: linear-gradient(135deg, #d9d9d9 0%, #777 33%, rgb(217, 217, 217) 66%, #777 100%);
+  --grad-skill-1: linear-gradient(145deg, rgb(134, 147, 203) 0%, rgb(70, 37, 104) 100%);
+  --grad-skill-2: linear-gradient(145deg, rgb(233, 139, 244) 0%, rgb(150, 36, 51) 100%);
+  --grad-skill-3: linear-gradient(145deg, rgb(53, 102, 146) 0%, rgb(101, 247, 255) 100%);
   --grad-project: linear-gradient(145deg, #ffecd2 0%, #fcb69f 100%);
   --grad-cta: linear-gradient(135deg, #667eea 0%, #c4a8df 100%);
   --grad-contact: linear-gradient(
@@ -85,8 +85,6 @@ section::before {
   position: absolute;
   inset: 0 0 auto 0;
   width: 100%;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="80" cy="80" r="1.5" fill="rgba(255,255,255,0.03)"/><circle cx="40" cy="70" r="0.8" fill="rgba(255,255,255,0.07)"/></svg>')
-    repeat;
   opacity: 0.6;
   animation: float 25s infinite linear;
   pointer-events: none;
@@ -100,7 +98,7 @@ section::before {
 }
 
 
-/* -------------------- Shared Section Titles -------------------- */
+/* -------------------- Titles -------------------- */
 #about h2,
 #projects h2,
 #skills h2,
@@ -128,7 +126,7 @@ section::before {
 }
 
 
-/* -------------------- Section Backgrounds -------------------- */
+/* -------------------- Background colors -------------------- */
 #home,
 #skills,
 #contact {
@@ -340,7 +338,7 @@ section::before {
   flex-direction: column;
   align-items: center;
   min-height: 350px;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 30px;
   color: white;
   overflow: hidden;
@@ -380,15 +378,31 @@ section::before {
 .skills-image-st,
 .skills-image-mysql,
 .skills-image-figma {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 0.3rem;
+  border-radius: 8px;
   object-fit: contain;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
+.skills-image-pl:hover,
+.skills-image-f:hover,
+.skills-image-st:hover,
+.skills-image-mysql:hover,
+.skills-image-figma:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
 .row-1, .row-2, .row-3 {
+  display: flex; 
+  flex-wrap: wrap; 
   justify-content: center;
+  align-items: center; 
+  gap: 0.5rem; 
+  margin-bottom: 1rem; 
+  width: 100%; 
+  padding: 0.5rem 0;
 }
 
 .skills-card h3 {
@@ -403,8 +417,9 @@ section::before {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  padding: 0.2rem 2rem;
-  margin: 1.2rem 0;
+  padding: 0.2rem 1rem;
+  margin: 1rem 0 0.5rem 0;
+  width: 100%;
 }
 
 
