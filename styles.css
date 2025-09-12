@@ -375,41 +375,15 @@ section::before {
 .col-2 { background: var(--grad-skill-2); }
 .col-3 { background: var(--grad-skill-3); }
 
-.skills-image-pl {
-  width: 60px;
-  height: 60px;    
-  margin: 10px;
-  object-fit: contain;
-}
-
-.skills-image-mysql {
-  width: 100px;
-  height: 60px;
-  margin: 10px;
-  object-fit: contain;
-}
-
-.skills-image-f {
-  width: 90px;
-  height: 90px;
-  margin: 10px;
-  border-radius: 20px;
-  object-fit: contain;
-}
-
-.skills-image-st {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  border-radius: 20px;
-  object-fit: contain;
-}
-
+.skills-image-pl,
+.skills-image-f,
+.skills-image-st,
+.skills-image-mysql,
 .skills-image-figma {
-  width: 45px;
+  width: 60px;
   height: 60px;
   margin: 10px;
-  border-radius: 2px;
+  border-radius: 5px;
   object-fit: contain;
 }
 
@@ -451,7 +425,7 @@ section::before {
 .project-card {
   padding: 2rem;
   border-radius: var(--radius-md);
-  min-height: 400px; /* Hauteur fixe pour tous les projets */
+  min-height: 400px; 
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -488,6 +462,7 @@ section::before {
   place-items: center;
   font-weight: 600;
   color: #fff;
+  object-fit: contain;
 }
 
 .project-info {
