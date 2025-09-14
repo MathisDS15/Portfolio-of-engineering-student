@@ -642,6 +642,22 @@ section::before {
 }
 
 
+/* ---------- Footer  ----------*/
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: var(--grad-cool);
+    color: var(--color-text);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+
 /* =========================================================
    Animations
    ======================================================= */
