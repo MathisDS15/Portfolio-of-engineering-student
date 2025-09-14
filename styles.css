@@ -503,6 +503,7 @@ section::before {
   color: #222222;
   text-align: justify;
   margin-bottom: 1rem;
+  margin: 0 1rem 1rem 0;
 }
 
 .project-info a {
@@ -520,6 +521,10 @@ section::before {
   background: #667eea;
   color: #fff;
   transform: translateY(-1px);
+}
+
+.p-technologies {
+  padding: 0.5rem 0.2rem;
 }
 
 .project-1, .project-2, .project-3, .project-4 { background: var(--grad-project); }
