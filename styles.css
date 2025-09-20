@@ -149,7 +149,6 @@ section::before {
   display: flex;
   justify-content: space-around;
   text-align: center;
-
   width: 70vw;
   max-width: 600px;
   padding: 1rem 1.5rem;
@@ -187,6 +186,12 @@ section::before {
 
 .navbar-link:hover::before {
   left: 100%;
+}
+
+html[lang="fr"] #navbar {
+  width: 80vw;
+  max-width: 700px;
+  padding: 1rem 1.2rem;
 }
 
 
@@ -680,19 +685,33 @@ footer p {
 
 
 /* =========================================================
-   Media Queries (quick touch-ups)
+   Media Queries 
    ======================================================= */
 @media (max-width: 900px) {
+  
   #navbar {
     width: 85vw;
     padding: 0.75rem 1rem;
   }
+
+  html[lang="fr"] #navbar {
+    width: 95vw;
+    padding: 0.75rem 0.8rem;
+  }
+  
+  .navbar-link {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+
   .about-columns {
     grid-template-columns: 1fr;
   }
+
   #signature {
     flex-direction: column;
     gap: 0.5rem;
     align-items: flex-start;
   }
+
 }
